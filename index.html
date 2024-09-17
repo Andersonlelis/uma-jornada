@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Jornada dos Artefatos Mágicos</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="image.png" alt="Mapa Antigo">
+            <p>Você encontrou um antigo pergaminho em uma biblioteca esquecida. O pergaminho fala de quatro artefatos mágicos que podem salvar o reino encantado de uma maldição. Sua jornada começa agora!</p>
+            <button class="btn-proximo" data-proximo="1">Floresta Encantada</button>
+            <button class="btn-proximo" data-proximo="2">Montanha Mística</button>
+            <button class="btn-proximo" data-proximo="3">Cidade Subterrânea</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você entra na Floresta Encantada, onde árvores falantes e criaturas mágicas são comuns. A primeira pista está escondida em uma árvore ancestral.</p>
+            <button class="btn-proximo" data-proximo="4">Investigar a árvore ancestral</button>
+            <button class="btn-proximo" data-proximo="5">Seguir para uma clareira próxima</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Na Montanha Mística, você encontra uma caverna misteriosa. A pista para o próximo artefato está em um mural antigo dentro da caverna.</p>
+            <button class="btn-proximo" data-proximo="6">Explorar a caverna</button>
+            <button class="btn-proximo" data-proximo="7">Descer para o vale</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Na Cidade Subterrânea, você explora uma antiga biblioteca. Os pergaminhos antigos podem conter pistas valiosas sobre o artefato perdido.</p>
+            <button class="btn-proximo" data-proximo="8">Pesquisar a biblioteca</button>
+            <button class="btn-proximo" data-proximo="9">Explorar as ruas subterrâneas</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>Você encontra uma pista secreta na árvore ancestral, que revela que o próximo artefato está na Montanha Mística.</p>
+            <button class="btn-proximo" data-proximo="2">Viajar para a Montanha Mística</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Você encontra uma clareira mágica com uma fonte curativa, mas não há pistas sobre o artefato. Talvez seja melhor voltar e investigar a árvore.</p>
+            <button class="btn-proximo" data-proximo="1">Voltar e investigar a árvore ancestral</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Na caverna, você descobre uma pista que direciona você para a Cidade Subterrânea. A próxima etapa da sua jornada está lá.</p>
+            <button class="btn-proximo" data-proximo="3">Viajar para a Cidade Subterrânea</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>Descer para o vale não leva a nenhuma pista. O melhor seria explorar a caverna para encontrar a verdadeira direção.</p>
+            <button class="btn-proximo" data-proximo="6">Voltar e explorar a caverna</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <p>Na biblioteca, você descobre um antigo tomo que revela a localização do próximo artefato na Floresta Encantada.</p>
+            <button class="btn-proximo" data-proximo="1">Retornar à Floresta Encantada</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <p>Explorar as ruas subterrâneas leva você a uma encruzilhada sem saída. É melhor voltar para a biblioteca e procurar mais pistas.</p>
+            <button class="btn-proximo" data-proximo="3">Retornar e pesquisar a biblioteca</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <p>Após seguir a pista, você encontra o primeiro artefato escondido nas profundezas da Floresta Encantada, cercado por magia antiga.</p>
+            <button class="btn-proximo" data-proximo="11">Buscar o próximo artefato na Montanha Mística</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <p>Com o artefato em mãos, você parte para a Montanha Mística. Lá, você encontra o segundo artefato em um altar sagrado dentro da caverna.</p>
+            <button class="btn-proximo" data-proximo="12">Partir para a Cidade Subterrânea para o terceiro artefato</button>
+        </div>
+        <div class="passo" id="passo-12">
+            <p>Na Cidade Subterrânea, você encontra uma antiga cripta onde o terceiro artefato está guardado em um sarcófago. Com os três artefatos reunidos, a maldição do reino pode ser quebrada.</p>
+            <button class="btn-proximo" data-proximo="13">Buscar o artefato final na Ilha do Dragão</button>
+        </div>
+        <div class="passo" id="passo-13">
+            <p>Você descobre um pergaminho antigo na biblioteca que menciona um quarto artefato escondido na Ilha do Dragão. Viaje para a ilha e encontre o artefato final.</p>
+            <button class="btn-proximo" data-proximo="14">Viajar para a Ilha do Dragão</button>
+        </div>
+        <div class="passo" id="passo-14">
+            <p>Na Ilha do Dragão, você enfrenta um dragão guardião para encontrar o artefato final. Após uma batalha épica, você recupera o quarto artefato e completa sua missão.</p>
+            <button class="btn-proximo" data-proximo="15">Retornar ao reino encantado para a conclusão</button>
+        </div>
+        <div class="passo" id="passo-15">
+            <p>Você retorna ao reino encantado com todos os quatro artefatos mágicos. A maldição é finalmente quebrada, trazendo paz e prosperidade ao reino. Em reconhecimento ao seu heroísmo, você é nomeado Guardião das Magias. Sua jornada se torna uma lenda, contada através das gerações como um exemplo de coragem e sabedoria.</p>
+            <button class="btn-proximo" data-proximo="final">Encerrar</button>
+        </div>
+        <div class="passo" id="final">
+            <p>Parabéns! Sua jornada chegou ao fim e o reino encantado está seguro. Obrigado por embarcar nessa aventura épica. Que suas futuras jornadas sejam tão grandiosas quanto essa!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
